@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: georgia;
+    background: url('../pics/bg-body.png') #fff;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px dashed black;
+    background-color: white;
+    color: green;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    border: 1px dashed black;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+    background: url("../pics/bg-menu.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   padding: 20px;
+   border-right: 1px dashed white;
+   border-left: 1px dashed white;
+   display: block;
+
+}
