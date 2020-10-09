@@ -10,12 +10,18 @@ body {
     background: url('../pics/bg-body.png') #fff;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     border: 2px dashed black;
     background-color: white;
     color: green;
     text-align: center;
+    padding: 40px 30px;
 }
 
 nav {
@@ -42,8 +48,7 @@ nav li {
 }
 
 nav a:hover {
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: lightblue;
 }
 
 nav a {
@@ -53,5 +58,48 @@ nav a {
    border-right: 1px dashed white;
    border-left: 1px dashed white;
    display: block;
+}
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+aside {
+    flex: 25%;
+    order: 1;
+}
+
+main {
+    order: 2;
+    flex: 75%;
+    flex-flow: column wrap;
+}
+
+.recipes {
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.recipes-box{
+    flex-grow: 1;
+    width: 300px;
+    margin: 10px;
+    background: white;
+}
+
+.recipes-box img {
+    width: 100%;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    padding: 20px 0;
+    border-bottom: 1px dashed gray;
 }
