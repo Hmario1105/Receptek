@@ -103,3 +103,25 @@ aside li {
     padding: 20px 0;
     border-bottom: 1px dashed gray;
 }
+
+.page {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pagination {
+    flex-flow: row wrap;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    display: inline-block;
+}
+
+.pagination a:hover {
+    color: white;
+    background: black;
+}
